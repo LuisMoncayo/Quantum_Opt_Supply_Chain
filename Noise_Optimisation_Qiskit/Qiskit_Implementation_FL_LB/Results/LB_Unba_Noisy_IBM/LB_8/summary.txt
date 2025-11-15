@@ -1,0 +1,195 @@
+Python 3.11.14 (main, Oct 21 2025, 18:31:21) [GCC 11.2.0]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 9.6.0 -- An enhanced Interactive Python. Type '?' for help.
+
+Reiniciando el núcleo...
+ 
+
+
+
+%runfile /home/quantum-lab/Escritorio/Qiskit_1/LB_Unco_Noise.py --wdir
+
+Configuration:
+  N_RUNS  = 30
+  reps    = 5
+  n_shots = 8000
+  lambda1 = 1
+  lambda2 = 12
+
+--- Dimensions ---
+A: (20, 24), sense: (20,), b: (20,)
+✅ QUBO built: 186 Pauli terms
+
+🔧 Loading IBM backend noise model: ibm_brisbane
+✅ Noisy AerSimulator initialised (ibm_brisbane, density_matrix).
+Circuit depth: 11
+
+================ RUN 01 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run01_Shots_20251103_120813.csv
+✅ Energy=-0.759685 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 11:22:58 | Ended: 2025-11-03 12:08:08 | Elapsed: 2709.61 sec
+
+================ RUN 02 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run02_Shots_20251103_125019.csv
+✅ Energy=-1.033273 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 12:08:13 | Ended: 2025-11-03 12:50:12 | Elapsed: 2519.22 sec
+
+================ RUN 03 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run03_Shots_20251103_133348.csv
+✅ Energy=-0.701514 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 12:50:19 | Ended: 2025-11-03 13:33:43 | Elapsed: 2604.23 sec
+
+================ RUN 04 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run04_Shots_20251103_141940.csv
+✅ Energy=-3.073123 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 13:33:48 | Ended: 2025-11-03 14:19:35 | Elapsed: 2746.41 sec
+
+================ RUN 05 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run05_Shots_20251103_150153.csv
+✅ Energy=-0.683111 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 14:19:40 | Ended: 2025-11-03 15:01:47 | Elapsed: 2526.40 sec
+
+================ RUN 06 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run06_Shots_20251103_154244.csv
+✅ Energy=-0.730118 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 15:01:53 | Ended: 2025-11-03 15:42:39 | Elapsed: 2445.22 sec
+
+================ RUN 07 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run07_Shots_20251103_162447.csv
+✅ Energy=-0.696891 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 15:42:44 | Ended: 2025-11-03 16:24:41 | Elapsed: 2516.92 sec
+
+================ RUN 08 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run08_Shots_20251103_170618.csv
+✅ Energy=-0.678719 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 16:24:47 | Ended: 2025-11-03 17:06:12 | Elapsed: 2485.45 sec
+
+================ RUN 09 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run09_Shots_20251103_174748.csv
+✅ Energy=-0.834973 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 17:06:18 | Ended: 2025-11-03 17:47:42 | Elapsed: 2484.56 sec
+
+================ RUN 10 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run10_Shots_20251103_182846.csv
+✅ Energy=-0.630534 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 17:47:48 | Ended: 2025-11-03 18:28:40 | Elapsed: 2452.26 sec
+
+================ RUN 11 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run11_Shots_20251103_190945.csv
+✅ Energy=-0.878208 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 18:28:46 | Ended: 2025-11-03 19:09:39 | Elapsed: 2453.62 sec
+
+================ RUN 12 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run12_Shots_20251103_195223.csv
+✅ Energy=-0.770612 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 19:09:45 | Ended: 2025-11-03 19:52:17 | Elapsed: 2552.16 sec
+
+================ RUN 13 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run13_Shots_20251103_203803.csv
+✅ Energy=-0.889757 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 19:52:23 | Ended: 2025-11-03 20:37:57 | Elapsed: 2734.53 sec
+
+================ RUN 14 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run14_Shots_20251103_212209.csv
+✅ Energy=-0.762737 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 20:38:03 | Ended: 2025-11-03 21:22:03 | Elapsed: 2640.65 sec
+
+================ RUN 15 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run15_Shots_20251103_220342.csv
+✅ Energy=-0.671659 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 21:22:09 | Ended: 2025-11-03 22:03:36 | Elapsed: 2487.39 sec
+
+================ RUN 16 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run16_Shots_20251103_224542.csv
+✅ Energy=-0.890388 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 22:03:42 | Ended: 2025-11-03 22:45:36 | Elapsed: 2514.26 sec
+
+================ RUN 17 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run17_Shots_20251103_232645.csv
+✅ Energy=-0.651874 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 22:45:42 | Ended: 2025-11-03 23:26:39 | Elapsed: 2457.16 sec
+
+================ RUN 18 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run18_Shots_20251104_000756.csv
+✅ Energy=-0.806164 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-03 23:26:45 | Ended: 2025-11-04 00:07:50 | Elapsed: 2465.70 sec
+
+================ RUN 19 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run19_Shots_20251104_005225.csv
+✅ Energy=-1.151803 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 00:07:56 | Ended: 2025-11-04 00:52:19 | Elapsed: 2663.42 sec
+
+================ RUN 20 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run20_Shots_20251104_013147.csv
+✅ Energy=-1.614721 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 00:52:25 | Ended: 2025-11-04 01:31:41 | Elapsed: 2356.21 sec
+
+================ RUN 21 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run21_Shots_20251104_021312.csv
+✅ Energy=-0.892511 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 01:31:47 | Ended: 2025-11-04 02:13:07 | Elapsed: 2480.00 sec
+
+================ RUN 22 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run22_Shots_20251104_025609.csv
+✅ Energy=-0.677052 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 02:13:12 | Ended: 2025-11-04 02:56:03 | Elapsed: 2571.09 sec
+
+================ RUN 23 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run23_Shots_20251104_034122.csv
+✅ Energy=-1.127777 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 02:56:09 | Ended: 2025-11-04 03:41:16 | Elapsed: 2707.30 sec
+
+================ RUN 24 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run24_Shots_20251104_042532.csv
+✅ Energy=-0.749315 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 03:41:22 | Ended: 2025-11-04 04:25:26 | Elapsed: 2644.58 sec
+
+================ RUN 25 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run25_Shots_20251104_050510.csv
+✅ Energy=-0.687132 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 04:25:32 | Ended: 2025-11-04 05:05:05 | Elapsed: 2372.54 sec
+
+================ RUN 26 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run26_Shots_20251104_054514.csv
+✅ Energy=-0.827415 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 05:05:10 | Ended: 2025-11-04 05:45:09 | Elapsed: 2398.36 sec
+
+================ RUN 27 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run27_Shots_20251104_062930.csv
+✅ Energy=-0.843394 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 05:45:14 | Ended: 2025-11-04 06:29:24 | Elapsed: 2650.11 sec
+
+================ RUN 28 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run28_Shots_20251104_071202.csv
+✅ Energy=-0.722996 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 06:29:30 | Ended: 2025-11-04 07:11:57 | Elapsed: 2546.10 sec
+
+================ RUN 29 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run29_Shots_20251104_075356.csv
+✅ Energy=-1.254407 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 07:12:02 | Ended: 2025-11-04 07:53:51 | Elapsed: 2508.78 sec
+
+================ RUN 30 / 30 ================
+🧾 Saved per-shot file: LB5_QAOA_Run30_Shots_20251104_083618.csv
+✅ Energy=-1.096212 | FeasMass=0.000e+00 | nFeas=0
+🕒 Started: 2025-11-04 07:53:56 | Ended: 2025-11-04 08:36:12 | Elapsed: 2535.78 sec
+
+=== Statistical summary ===
+             count         mean         std          min          25%  \
+run           30.0    15.500000    8.803408     1.000000     8.250000   
+best_energy   30.0    -0.926269    0.459690    -3.073123    -0.891981   
+feas_mass     30.0     0.000000    0.000000     0.000000     0.000000   
+n_feas        30.0     0.000000    0.000000     0.000000     0.000000   
+elapsed_sec   30.0  2541.001284  105.781651  2356.210450  2469.274216   
+energy_norm   30.0    -0.077189    0.038308    -0.256094    -0.074332   
+
+                     50%          75%          max  
+run            15.500000    22.750000    30.000000  
+best_energy    -0.788388    -0.698047    -0.630534  
+feas_mass       0.000000     0.000000     0.000000  
+n_feas          0.000000     0.000000     0.000000  
+elapsed_sec  2518.068781  2631.543102  2746.406067  
+energy_norm    -0.065699    -0.058171    -0.052544  
+
+✅ Results saved to LB5_QAOA_Brisbane_Noise_20251104_0836.csv

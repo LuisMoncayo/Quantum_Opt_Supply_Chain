@@ -1,0 +1,368 @@
+Python 3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:56:31) [Clang 19.1.7 ]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 9.6.0 -- An enhanced Interactive Python. Type '?' for help.
+
+Restarting kernel...
+ 
+
+
+
+%runfile /Users/luismoncayo/Library/CloudStorage/Dropbox/Python/Qiskit_Implementation_FL_LB/FL_Slack_Noisy_IBM.py --wdir
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/geopandas/geodataframe.py:1968: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  super().__setitem__(key, value)
+management.get:WARNING:2025-10-30 10:24:07,570: Loading default saved account
+[['EX5', 'EX9', 'EX10', 'EX11'], ['EX9', 'EX5', 'EX10'], ['EX10', 'EX5', 'EX9', 'EX11', 'EX12'], ['EX11', 'EX5', 'EX10'], ['EX12', 'EX10', 'EX13'], ['EX13', 'EX12']]
+[5, 9, 10, 11]
+[5, 9, 10]
+[5, 9, 10, 11, 12]
+[5, 10, 11]
+[10, 12, 13]
+[12, 13]
+The problem has 6 constraints and 18 variables
+
+SparsePauliOp built successfully.
+
+✅ Using backend: ibm_brisbane (127 qubits)
+Noise model successfully loaded from IBM calibration data.
+
+Configuration:
+  N_RUNS  = 30
+  reps    = 3
+  n_shots = 250
+  lagrange = 0.5
+
+
+================ RUN 01 / 30 ================
+Start time: 2025-10-30 10:24:13
+Best expected energy (ideal): 11.5771
+Optimal parameters (theta_star): [ 6.6352  0.0383  3.8933 -0.2927  5.8023  0.5702]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:24:36
+Elapsed time: 22.76 seconds
+File saved as facility_location_results_noisy_run01.csv
+Feasible solutions with energy_M = 2 (total shots): 33
+Total feasible measurements (total shots): 164
+
+================ RUN 02 / 30 ================
+Start time: 2025-10-30 10:24:36
+Best expected energy (ideal): 12.6802
+Optimal parameters (theta_star): [5.9943 1.1561 3.7128 1.4035 5.7936 0.4431]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:24:59
+Elapsed time: 23.06 seconds
+File saved as facility_location_results_noisy_run02.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 143
+
+================ RUN 03 / 30 ================
+Start time: 2025-10-30 10:24:59
+Best expected energy (ideal): 13.7651
+Optimal parameters (theta_star): [3.624  0.5807 1.7654 0.6427 2.452  1.4115]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:25:22
+Elapsed time: 22.86 seconds
+File saved as facility_location_results_noisy_run03.csv
+Feasible solutions with energy_M = 2 (total shots): 12
+Total feasible measurements (total shots): 125
+
+================ RUN 04 / 30 ================
+Start time: 2025-10-30 10:25:22
+Best expected energy (ideal): 12.5205
+Optimal parameters (theta_star): [1.5533 0.3948 6.2505 1.5763 4.3119 1.1091]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:25:45
+Elapsed time: 23.10 seconds
+File saved as facility_location_results_noisy_run04.csv
+Feasible solutions with energy_M = 2 (total shots): 29
+Total feasible measurements (total shots): 158
+
+================ RUN 05 / 30 ================
+Start time: 2025-10-30 10:25:45
+Best expected energy (ideal): 10.2046
+Optimal parameters (theta_star): [ 1.318  -0.1845  1.7286  0.1166  2.3131  0.8081]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:26:07
+Elapsed time: 22.71 seconds
+File saved as facility_location_results_noisy_run05.csv
+Feasible solutions with energy_M = 2 (total shots): 19
+Total feasible measurements (total shots): 142
+
+================ RUN 06 / 30 ================
+Start time: 2025-10-30 10:26:07
+Best expected energy (ideal): 12.9502
+Optimal parameters (theta_star): [6.4609 1.959  2.6279 1.3614 4.0399 0.2878]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:26:30
+Elapsed time: 22.78 seconds
+File saved as facility_location_results_noisy_run06.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 167
+
+================ RUN 07 / 30 ================
+Start time: 2025-10-30 10:26:30
+Best expected energy (ideal): 14.0103
+Optimal parameters (theta_star): [1.4277 0.4042 4.1784 0.6513 0.6694 0.9116]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:26:53
+Elapsed time: 23.11 seconds
+File saved as facility_location_results_noisy_run07.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 157
+
+================ RUN 08 / 30 ================
+Start time: 2025-10-30 10:26:53
+Best expected energy (ideal): 13.2500
+Optimal parameters (theta_star): [0.0007 1.0875 2.9283 0.6027 0.8721 1.8566]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:27:16
+Elapsed time: 23.06 seconds
+File saved as facility_location_results_noisy_run08.csv
+Feasible solutions with energy_M = 2 (total shots): 15
+Total feasible measurements (total shots): 144
+
+================ RUN 09 / 30 ================
+Start time: 2025-10-30 10:27:16
+Best expected energy (ideal): 14.0264
+Optimal parameters (theta_star): [5.0681 0.5735 5.5345 1.3589 4.5784 1.4381]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:27:40
+Elapsed time: 23.54 seconds
+File saved as facility_location_results_noisy_run09.csv
+Feasible solutions with energy_M = 2 (total shots): 15
+Total feasible measurements (total shots): 133
+
+================ RUN 10 / 30 ================
+Start time: 2025-10-30 10:27:40
+Best expected energy (ideal): 10.9937
+Optimal parameters (theta_star): [4.4689 1.1723 6.0532 0.4413 1.268  0.9632]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:28:03
+Elapsed time: 23.20 seconds
+File saved as facility_location_results_noisy_run10.csv
+Feasible solutions with energy_M = 2 (total shots): 21
+Total feasible measurements (total shots): 153
+
+================ RUN 11 / 30 ================
+Start time: 2025-10-30 10:28:03
+Best expected energy (ideal): 12.7808
+Optimal parameters (theta_star): [1.6427 0.6536 4.5568 1.0856 5.9298 0.8547]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:28:26
+Elapsed time: 23.15 seconds
+File saved as facility_location_results_noisy_run11.csv
+Feasible solutions with energy_M = 2 (total shots): 5
+Total feasible measurements (total shots): 92
+
+================ RUN 12 / 30 ================
+Start time: 2025-10-30 10:28:26
+Best expected energy (ideal): 11.9531
+Optimal parameters (theta_star): [5.7116 1.001  4.3543 0.3564 4.8983 1.0955]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:28:49
+Elapsed time: 22.94 seconds
+File saved as facility_location_results_noisy_run12.csv
+Feasible solutions with energy_M = 2 (total shots): 22
+Total feasible measurements (total shots): 119
+
+================ RUN 13 / 30 ================
+Start time: 2025-10-30 10:28:49
+Best expected energy (ideal): 13.6641
+Optimal parameters (theta_star): [3.2592 0.9748 1.7649 1.2399 0.8212 0.4607]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:29:12
+Elapsed time: 22.78 seconds
+File saved as facility_location_results_noisy_run13.csv
+Feasible solutions with energy_M = 2 (total shots): 15
+Total feasible measurements (total shots): 151
+
+================ RUN 14 / 30 ================
+Start time: 2025-10-30 10:29:12
+Best expected energy (ideal): 13.8530
+Optimal parameters (theta_star): [1.9975 1.1471 5.4905 0.5772 0.9191 1.5421]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:29:35
+Elapsed time: 23.02 seconds
+File saved as facility_location_results_noisy_run14.csv
+Feasible solutions with energy_M = 2 (total shots): 24
+Total feasible measurements (total shots): 154
+
+================ RUN 15 / 30 ================
+Start time: 2025-10-30 10:29:35
+Best expected energy (ideal): 12.9067
+Optimal parameters (theta_star): [ 1.1653  1.6382 -0.2012  0.5898  1.7045  0.871 ]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:29:58
+Elapsed time: 23.06 seconds
+File saved as facility_location_results_noisy_run15.csv
+Feasible solutions with energy_M = 2 (total shots): 19
+Total feasible measurements (total shots): 103
+
+================ RUN 16 / 30 ================
+Start time: 2025-10-30 10:29:58
+Best expected energy (ideal): 8.5640
+Optimal parameters (theta_star): [ 2.5999 -0.3321  0.0722  0.1371  0.6406  1.1984]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:30:21
+Elapsed time: 23.05 seconds
+File saved as facility_location_results_noisy_run16.csv
+Feasible solutions with energy_M = 2 (total shots): 30
+Total feasible measurements (total shots): 110
+
+================ RUN 17 / 30 ================
+Start time: 2025-10-30 10:30:21
+Best expected energy (ideal): 12.2822
+Optimal parameters (theta_star): [5.8367 1.0366 2.0765 0.5098 2.1219 0.3369]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:30:44
+Elapsed time: 23.07 seconds
+File saved as facility_location_results_noisy_run17.csv
+Feasible solutions with energy_M = 2 (total shots): 31
+Total feasible measurements (total shots): 107
+
+================ RUN 18 / 30 ================
+Start time: 2025-10-30 10:30:44
+Best expected energy (ideal): 13.9380
+Optimal parameters (theta_star): [3.8863 1.1027 0.822  1.4799 6.0266 0.2363]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:31:07
+Elapsed time: 22.88 seconds
+File saved as facility_location_results_noisy_run18.csv
+Feasible solutions with energy_M = 2 (total shots): 14
+Total feasible measurements (total shots): 127
+
+================ RUN 19 / 30 ================
+Start time: 2025-10-30 10:31:07
+Best expected energy (ideal): 12.5767
+Optimal parameters (theta_star): [6.0321 0.1313 2.0814 0.6744 5.4557 0.4029]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:31:30
+Elapsed time: 23.34 seconds
+File saved as facility_location_results_noisy_run19.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 182
+
+================ RUN 20 / 30 ================
+Start time: 2025-10-30 10:31:30
+Best expected energy (ideal): 11.1274
+Optimal parameters (theta_star): [3.3855 2.0194 2.5001 0.1267 3.1572 0.3495]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:31:54
+Elapsed time: 23.29 seconds
+File saved as facility_location_results_noisy_run20.csv
+Feasible solutions with energy_M = 2 (total shots): 28
+Total feasible measurements (total shots): 134
+
+================ RUN 21 / 30 ================
+Start time: 2025-10-30 10:31:54
+Best expected energy (ideal): 12.7114
+Optimal parameters (theta_star): [4.5755 1.4602 5.2302 0.752  1.4673 1.4036]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:32:17
+Elapsed time: 23.07 seconds
+File saved as facility_location_results_noisy_run21.csv
+Feasible solutions with energy_M = 2 (total shots): 30
+Total feasible measurements (total shots): 142
+
+================ RUN 22 / 30 ================
+Start time: 2025-10-30 10:32:17
+Best expected energy (ideal): 13.6689
+Optimal parameters (theta_star): [1.2358 0.9501 1.3909 0.5775 2.0153 0.7287]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:32:40
+Elapsed time: 23.10 seconds
+File saved as facility_location_results_noisy_run22.csv
+Feasible solutions with energy_M = 2 (total shots): 22
+Total feasible measurements (total shots): 153
+
+================ RUN 23 / 30 ================
+Start time: 2025-10-30 10:32:40
+Best expected energy (ideal): 13.0723
+Optimal parameters (theta_star): [1.0237 0.5762 1.6571 1.0587 5.6702 1.2847]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:33:03
+Elapsed time: 23.33 seconds
+File saved as facility_location_results_noisy_run23.csv
+Feasible solutions with energy_M = 2 (total shots): 13
+Total feasible measurements (total shots): 96
+
+================ RUN 24 / 30 ================
+Start time: 2025-10-30 10:33:03
+Best expected energy (ideal): 12.4766
+Optimal parameters (theta_star): [4.379  0.2361 1.6215 1.7203 2.1784 0.5087]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:33:27
+Elapsed time: 23.25 seconds
+File saved as facility_location_results_noisy_run24.csv
+Feasible solutions with energy_M = 2 (total shots): 11
+Total feasible measurements (total shots): 119
+
+================ RUN 25 / 30 ================
+Start time: 2025-10-30 10:33:27
+Best expected energy (ideal): 10.2515
+Optimal parameters (theta_star): [2.8016 1.3001 2.0331 0.2939 2.622  0.5242]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:33:50
+Elapsed time: 23.03 seconds
+File saved as facility_location_results_noisy_run25.csv
+Feasible solutions with energy_M = 2 (total shots): 43
+Total feasible measurements (total shots): 125
+
+================ RUN 26 / 30 ================
+Start time: 2025-10-30 10:33:50
+Best expected energy (ideal): 11.2471
+Optimal parameters (theta_star): [3.3284 0.689  6.2979 1.1052 5.0081 1.1397]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:34:13
+Elapsed time: 23.35 seconds
+File saved as facility_location_results_noisy_run26.csv
+Feasible solutions with energy_M = 2 (total shots): 24
+Total feasible measurements (total shots): 151
+
+================ RUN 27 / 30 ================
+Start time: 2025-10-30 10:34:13
+Best expected energy (ideal): 12.9868
+Optimal parameters (theta_star): [2.8581 1.3705 3.4053 1.3681 5.2414 1.0466]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:34:36
+Elapsed time: 23.13 seconds
+File saved as facility_location_results_noisy_run27.csv
+Feasible solutions with energy_M = 2 (total shots): 8
+Total feasible measurements (total shots): 135
+
+================ RUN 28 / 30 ================
+Start time: 2025-10-30 10:34:36
+Best expected energy (ideal): 11.0850
+Optimal parameters (theta_star): [0.9156 0.2409 4.8835 0.0671 4.7007 1.3664]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:34:59
+Elapsed time: 22.93 seconds
+File saved as facility_location_results_noisy_run28.csv
+Feasible solutions with energy_M = 2 (total shots): 14
+Total feasible measurements (total shots): 121
+
+================ RUN 29 / 30 ================
+Start time: 2025-10-30 10:34:59
+Best expected energy (ideal): 13.4434
+Optimal parameters (theta_star): [1.3084 0.6222 6.6751 1.3058 1.0409 1.2793]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:35:22
+Elapsed time: 23.15 seconds
+File saved as facility_location_results_noisy_run29.csv
+Feasible solutions with energy_M = 2 (total shots): 28
+Total feasible measurements (total shots): 158
+
+================ RUN 30 / 30 ================
+Start time: 2025-10-30 10:35:22
+Best expected energy (ideal): 13.1357
+Optimal parameters (theta_star): [1.2674 0.0561 3.2098 1.386  3.9147 1.0496]
+Transpiled circuit depth: 443
+End time: 2025-10-30 10:35:45
+Elapsed time: 22.97 seconds
+File saved as facility_location_results_noisy_run30.csv
+Feasible solutions with energy_M = 2 (total shots): 9
+Total feasible measurements (total shots): 154

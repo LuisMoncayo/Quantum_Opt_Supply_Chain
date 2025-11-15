@@ -1,0 +1,445 @@
+Python 3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:56:31) [Clang 19.1.7 ]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 9.6.0 -- An enhanced Interactive Python. Type '?' for help.
+
+Restarting kernel...
+ 
+
+
+
+%runfile /Users/luismoncayo/Library/CloudStorage/Dropbox/Python/Qiskit_Implementation_FL_LB/FL_Unbalanced_IBM.py --wdir
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/geopandas/geodataframe.py:1968: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  super().__setitem__(key, value)
+management.get:WARNING:2025-11-03 09:26:58,150: Loading default saved account
+[['EX9', 'EX10'], ['EX10', 'EX9', 'EX11', 'EX12', 'EX14', 'EX24'], ['EX11', 'EX10', 'EX14'], ['EX12', 'EX10', 'EX13', 'EX24'], ['EX13', 'EX12', 'EX14', 'EX24'], ['EX14', 'EX10', 'EX11', 'EX13', 'EX15', 'EX24'], ['EX15', 'EX14'], ['EX24', 'EX10', 'EX12', 'EX13', 'EX14']]
+[9, 10]
+[9, 10, 11, 12, 14, 24]
+[10, 11, 14]
+[10, 12, 13, 24]
+[12, 13, 14, 24]
+[10, 11, 13, 14, 15, 24]
+[14, 15]
+[10, 12, 13, 14, 24]
+
+The problem has 8 constraints and 8 variables
+
+Upper-triangular QUBO matrix:
+ [[1.98 0.08 0.04 0.04 0.   0.04 0.   0.04]
+ [0.   3.94 0.12 0.12 0.12 0.16 0.04 0.16]
+ [0.   0.   2.47 0.04 0.04 0.12 0.04 0.08]
+ [0.   0.   0.   2.96 0.12 0.12 0.   0.16]
+ [0.   0.   0.   0.   2.96 0.12 0.04 0.16]
+ [0.   0.   0.   0.   0.   3.94 0.08 0.16]
+ [0.   0.   0.   0.   0.   0.   1.98 0.04]
+ [0.   0.   0.   0.   0.   0.   0.   3.45]]
+Constant term: -3.920000000000001
+
+SparsePauliOp built successfully.
+SparsePauliOp(['IIIIIIII', 'ZIIIIIII', 'IZIIIIII', 'IIZIIIII', 'IIIZIIII', 'IIIIZIII', 'IIIIIZII', 'IIIIIIZI', 'IIIIIIIZ', 'ZZIIIIII', 'ZIZIIIII', 'ZIIZIIII', 'ZIIIIZII', 'ZIIIIIIZ', 'IZZIIIII', 'IZIZIIII', 'IZIIZIII', 'IZIIIZII', 'IZIIIIZI', 'IZIIIIIZ', 'IIZZIIII', 'IIZIZIII', 'IIZIIZII', 'IIZIIIZI', 'IIZIIIIZ', 'IIIZZIII', 'IIIZIZII', 'IIIZIIIZ', 'IIIIZZII', 'IIIIZIZI', 'IIIIZIIZ', 'IIIIIZZI', 'IIIIIZIZ', 'IIIIIIZZ'],
+              coeffs=[ 8.49 +0.j, -1.05 +0.j, -2.17 +0.j, -1.355+0.j, -1.63 +0.j, -1.63 +0.j, -2.17 +0.j, -1.05 +0.j, -1.925+0.j,  0.02 +0.j,  0.01 +0.j,  0.01 +0.j,  0.01 +0.j,  0.01 +0.j,  0.03 +0.j,  0.03 +0.j,  0.03 +0.j,  0.04 +0.j,  0.01 +0.j,  0.04 +0.j,  0.01 +0.j,  0.01 +0.j,  0.03 +0.j,  0.01 +0.j,  0.02 +0.j,  0.03 +0.j,  0.03 +0.j,  0.04 +0.j,  0.03 +0.j,  0.01 +0.j,  0.04 +0.j,  0.02 +0.j,  0.04 +0.j,  0.01 +0.j])
+
+✅ Using backend: ibm_brisbane (127 qubits)
+Noise model successfully loaded from IBM calibration data.
+
+Configuration:
+  N_RUNS  = 30
+  reps    = 30
+  n_shots = 5000
+  lambda2 = 0.01
+  lambda1 = 0.5
+
+
+================ RUN 01 / 30 ================
+Start time: 2025-11-03 09:27:03
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.4510
+Optimal parameters (theta_star): [5.8811 0.1882 3.3682 0.2307 0.2963 1.2709 1.221  0.1976 1.5662 0.3662 2.3079 0.859  3.5042 1.3734 0.0308 1.0311 3.4606 0.5412 3.9952 1.1928 1.9127 0.5463 5.0018 1.5601 5.3038 1.088  5.5302 1.1679 5.3124 1.3438 2.1837 0.7445 0.609  0.2779 3.0899 1.5529 6.1562 0.2886 0.3753 0.46   3.7851 0.2114 3.508  1.4019 0.0419 0.2714 4.1278 0.0488 3.9438 0.5068 4.5889 1.0572 3.382  0.6272 0.5811 1.2096 4.5574 1.8617 2.6715 0.5688]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:05
+Elapsed time: 2.00 seconds
+File saved as facility_location_results_noisy_run01.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 1895
+
+================ RUN 02 / 30 ================
+Start time: 2025-11-03 09:27:05
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.2977
+Optimal parameters (theta_star): [6.0413 0.8622 3.7448 0.0751 1.6014 1.9949 2.6491 1.1308 0.6293 1.9766 4.4846 0.5496 4.9322 0.9673 6.1355 0.8997 3.2706 0.8331 6.1685 0.088  0.4494 1.5572 3.7423 0.4382 2.6894 0.8578 5.2546 0.4475 1.501  0.2982 3.995  1.2855 0.7906 0.8486 3.898  1.3265 6.106  1.0795 5.2732 1.3375 1.8854 1.1558 5.1619 1.3171 1.669  0.6141 0.2667 1.0474 0.2427 0.6442 0.3873 0.4136 1.4321 1.0434 0.9286 0.314  2.9603 0.8405 5.4879 0.2384]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:07
+Elapsed time: 1.97 seconds
+File saved as facility_location_results_noisy_run02.csv
+Feasible solutions with energy_M = 2 (total shots): 13
+Total feasible measurements (total shots): 1639
+
+================ RUN 03 / 30 ================
+Start time: 2025-11-03 09:27:07
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.4612
+Optimal parameters (theta_star): [4.1457 0.5351 5.424  1.2193 1.5455 1.2912 0.9962 0.0722 2.8329 0.3084 3.8473 0.0661 1.2397 0.1838 5.1863 0.1775 0.5841 1.8964 2.1102 0.3517 5.7683 0.5383 2.1896 0.2574 2.7011 0.2976 5.9867 0.2953 4.6176 0.3757 2.0864 0.4944 5.1533 1.1029 4.8339 0.2529 4.5643 0.4493 5.2446 1.4149 0.1018 0.2533 3.5618 0.0746 1.0952 0.4813 3.6767 1.3772 5.3357 1.4042 2.4873 1.5091 3.7779 0.6495 0.6348 1.533  3.4243 1.2655 3.3877 0.4808]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:08
+Elapsed time: 1.92 seconds
+File saved as facility_location_results_noisy_run03.csv
+Feasible solutions with energy_M = 2 (total shots): 19
+Total feasible measurements (total shots): 1545
+
+================ RUN 04 / 30 ================
+Start time: 2025-11-03 09:27:08
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.9739
+Optimal parameters (theta_star): [0.6544 1.4632 1.8433 0.9034 6.0742 1.3508 1.1508 0.1114 3.7188 1.1141 0.1379 0.2108 1.5976 0.6658 0.0232 1.4529 5.9372 0.8227 3.5659 0.7317 0.7506 0.226  4.4118 0.8813 4.8606 0.6901 1.5456 0.4689 4.4297 0.8679 1.5382 0.2372 5.0994 1.1389 1.9407 0.9497 3.4796 1.1577 4.5286 1.0272 2.2097 0.8636 5.9189 1.4068 0.3514 0.0311 2.6097 1.4977 4.3711 0.4054 1.2246 0.4601 0.0531 1.2697 6.0691 0.8961 1.2901 1.295  4.5516 0.1905]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:10
+Elapsed time: 1.81 seconds
+File saved as facility_location_results_noisy_run04.csv
+Feasible solutions with energy_M = 2 (total shots): 22
+Total feasible measurements (total shots): 1763
+
+================ RUN 05 / 30 ================
+Start time: 2025-11-03 09:27:10
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.5803
+Optimal parameters (theta_star): [6.2573 0.9052 3.4428 0.1672 0.9422 0.6487 2.0446 0.2921 3.8234 1.5688 5.4651 0.8192 3.4106 1.1593 1.3129 0.1058 1.2247 0.5221 2.5532 0.0639 2.3907 1.2362 5.1547 0.2431 6.1753 1.2676 4.052  1.1754 3.3478 0.8084 0.7679 0.296  4.3957 0.5064 4.7755 0.5396 2.4359 0.9242 3.1262 1.1753 5.9785 1.4548 2.0842 0.7991 4.8475 0.9268 0.3468 0.9703 1.325  1.3946 1.1435 0.759  3.795  0.325  2.155  1.1013 2.1603 1.0211 5.6916 1.2821]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:12
+Elapsed time: 1.87 seconds
+File saved as facility_location_results_noisy_run05.csv
+Feasible solutions with energy_M = 2 (total shots): 14
+Total feasible measurements (total shots): 1743
+
+================ RUN 06 / 30 ================
+Start time: 2025-11-03 09:27:12
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.2086
+Optimal parameters (theta_star): [5.5711 1.0848 1.7955 1.5211 5.0393 1.0572 5.6431 0.369  4.7288 1.5875 4.0003 0.5122 4.8855 0.4375 2.3751 1.0929 2.6824 1.4822 4.2809 1.202  1.4677 0.5342 3.8184 0.9408 6.0099 0.7893 2.4511 1.3108 3.1823 0.1303 0.7349 1.0019 5.6891 0.6291 0.541  0.1208 4.7925 0.417  1.929  1.0616 0.6174 0.5662 2.8235 1.3208 2.2196 0.3414 4.4066 0.3162 3.4321 1.1898 4.2692 1.0874 4.1291 1.4185 2.7683 0.8876 6.1465 0.8227 4.5895 0.8457]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:14
+Elapsed time: 1.89 seconds
+File saved as facility_location_results_noisy_run06.csv
+Feasible solutions with energy_M = 2 (total shots): 35
+Total feasible measurements (total shots): 1744
+
+================ RUN 07 / 30 ================
+Start time: 2025-11-03 09:27:14
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 2.7128
+Optimal parameters (theta_star): [3.1253 0.6145 2.5382 1.3512 6.6037 0.2274 4.7175 0.1136 2.5783 0.5261 2.2552 0.4905 2.6467 0.6308 4.1358 0.0845 0.6286 1.5961 1.3349 1.3693 2.0473 1.251  5.8584 0.6687 2.0078 0.1395 3.5854 0.3304 2.0649 0.5875 0.7409 1.2155 3.9197 0.7986 3.342  0.4565 0.8138 1.1048 1.781  0.0198 3.541  1.4661 0.1085 0.0298 3.9935 1.2396 0.5363 1.4567 0.2388 0.1663 1.4021 0.2628 5.6639 1.1348 1.0266 1.0539 1.3968 1.303  5.6714 1.1602]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:16
+Elapsed time: 1.87 seconds
+File saved as facility_location_results_noisy_run07.csv
+Feasible solutions with energy_M = 2 (total shots): 14
+Total feasible measurements (total shots): 1558
+
+================ RUN 08 / 30 ================
+Start time: 2025-11-03 09:27:16
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.3953
+Optimal parameters (theta_star): [4.4276 0.0136 0.1019 0.7743 2.5492 1.6339 2.3379 0.5106 3.7946 0.7876 1.5287 1.2657 3.8409 0.5735 0.0277 1.3165 1.0498 0.9865 4.9655 0.8765 0.7646 0.9625 4.0968 0.6895 2.929  1.0039 4.7945 0.8959 4.7093 1.5063 0.9256 0.3026 2.5217 0.6092 4.8448 0.9958 2.3786 0.7575 6.1132 1.2007 1.8535 1.4893 3.1827 0.8192 5.66   0.5287 0.4794 0.9281 3.3989 0.0685 3.2369 1.1476 0.6438 0.9273 3.765  0.7033 0.5831 0.5204 5.9892 1.0276]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:18
+Elapsed time: 1.95 seconds
+File saved as facility_location_results_noisy_run08.csv
+Feasible solutions with energy_M = 2 (total shots): 9
+Total feasible measurements (total shots): 1811
+
+================ RUN 09 / 30 ================
+Start time: 2025-11-03 09:27:18
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.8724
+Optimal parameters (theta_star): [2.9036 0.1654 1.7285 1.7758 4.7674 1.5067 4.2082 0.6589 0.4057 0.4522 0.9087 0.675  1.2207 0.6582 0.6971 0.8513 4.2995 1.2677 4.011  1.4362 3.3231 1.178  5.1311 0.192  2.3353 0.6347 1.7769 1.3313 2.4216 0.811  1.1315 1.1163 5.905  1.5465 3.4412 1.0414 0.1537 1.5433 0.6844 1.3851 0.7688 0.2573 3.0481 1.4578 4.5614 0.0495 2.7838 1.0605 0.9611 0.7286 0.2594 0.6992 1.0482 1.4194 3.7834 1.5701 0.606  1.0136 3.9978 0.1174]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:20
+Elapsed time: 1.90 seconds
+File saved as facility_location_results_noisy_run09.csv
+Feasible solutions with energy_M = 2 (total shots): 6
+Total feasible measurements (total shots): 1722
+
+================ RUN 10 / 30 ================
+Start time: 2025-11-03 09:27:20
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.9419
+Optimal parameters (theta_star): [4.1025 1.5637 2.2697 0.1531 5.5897 0.7172 1.4692 0.358  0.1724 1.1275 1.4959 1.0894 5.9726 0.6666 2.1126 0.7834 4.5291 0.826  4.9725 0.7009 1.4363 1.5392 1.523  1.1609 1.2724 0.8999 4.9011 1.03   1.2788 0.5948 6.1088 0.8983 2.9882 0.6633 5.0847 0.1889 5.7035 0.0309 5.7554 1.5381 3.378  0.9757 0.4769 1.3358 0.2261 0.0062 3.7688 1.2889 0.3678 1.4897 1.0469 0.2252 2.9295 0.0831 3.7274 1.1436 5.5486 0.4676 3.1798 1.0764]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:22
+Elapsed time: 1.81 seconds
+File saved as facility_location_results_noisy_run10.csv
+Feasible solutions with energy_M = 2 (total shots): 14
+Total feasible measurements (total shots): 1893
+
+================ RUN 11 / 30 ================
+Start time: 2025-11-03 09:27:22
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.5259
+Optimal parameters (theta_star): [6.3285 0.7216 0.6098 0.7034 4.6634 0.5193 4.3485 0.6564 5.1173 1.4306 4.798  0.4501 3.8187 0.1495 4.4228 2.0455 5.1187 0.6148 4.9092 1.0577 2.2205 1.0848 2.4259 1.0214 4.9518 0.7972 2.3647 1.212  3.4461 0.628  2.225  0.7099 0.2726 1.2318 0.7556 1.1908 3.3064 1.4012 3.5211 0.7131 1.8701 1.3099 4.3401 0.144  4.0314 0.9564 3.1181 0.5124 4.6815 1.545  1.4375 0.2284 0.4357 1.2236 4.2424 0.2074 5.5076 1.0985 5.9078 0.723 ]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:23
+Elapsed time: 1.88 seconds
+File saved as facility_location_results_noisy_run11.csv
+Feasible solutions with energy_M = 2 (total shots): 17
+Total feasible measurements (total shots): 1658
+
+================ RUN 12 / 30 ================
+Start time: 2025-11-03 09:27:23
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.8805
+Optimal parameters (theta_star): [1.0716 0.2586 1.0752 1.5616 5.0263 0.5956 0.1306 0.4035 1.2759 0.8929 2.0672 1.1002 2.8716 1.6657 2.3861 0.7233 5.7857 0.1642 6.1993 1.1932 4.5148 0.562  2.2539 0.8497 5.1276 0.7694 0.5477 0.0478 3.6792 0.4748 3.9452 0.6561 0.0661 1.5648 0.9565 1.512  4.3341 0.9196 3.1788 1.4871 4.3402 0.3614 5.6342 1.555  1.3578 2.0583 2.1969 0.8716 4.6198 0.6483 3.1767 1.3427 2.5776 0.3067 4.6069 0.6683 1.4905 0.9275 3.3221 1.5496]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:25
+Elapsed time: 1.83 seconds
+File saved as facility_location_results_noisy_run12.csv
+Feasible solutions with energy_M = 2 (total shots): 26
+Total feasible measurements (total shots): 1723
+
+================ RUN 13 / 30 ================
+Start time: 2025-11-03 09:27:25
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.2513
+Optimal parameters (theta_star): [0.4159 0.0986 5.1792 1.2438 1.1493 0.0951 3.5531 0.8246 2.9996 0.0766 2.4706 0.7584 2.0869 0.4313 3.656  0.6672 0.2688 0.1353 1.2248 0.0234 0.5525 1.1487 1.6539 1.6919 2.1892 1.4666 3.0323 1.2041 5.3841 0.4156 4.4538 0.6266 1.2481 0.3015 1.8258 0.2271 2.2436 0.7549 2.4297 1.2166 6.1666 0.5935 4.4    0.0498 5.6548 1.1214 4.7939 1.4848 4.7127 1.2851 5.3013 0.0381 1.822  0.7759 2.7727 1.1304 1.4802 1.047  3.0949 1.0777]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:27
+Elapsed time: 1.89 seconds
+File saved as facility_location_results_noisy_run13.csv
+Feasible solutions with energy_M = 2 (total shots): 12
+Total feasible measurements (total shots): 1967
+
+================ RUN 14 / 30 ================
+Start time: 2025-11-03 09:27:27
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 2.9404
+Optimal parameters (theta_star): [6.0428 0.9297 1.0291 0.4821 1.2951 0.1979 5.399  0.6199 5.4384 0.692  1.0183 1.1327 5.1103 0.1392 4.7479 1.2206 3.1614 1.3656 5.7315 1.3399 0.8627 0.1948 3.9433 0.4606 2.3976 1.0304 2.4454 0.8769 4.5656 0.6937 2.7852 0.059  2.283  1.4813 3.5579 1.1049 4.3341 1.5048 0.5638 0.0119 4.3086 1.0865 0.6682 0.6299 0.9514 1.1609 4.4691 0.3187 0.2866 1.5591 2.5578 0.7421 5.3001 0.0001 5.3378 0.7208 0.4176 0.9676 1.0115 1.4973]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:29
+Elapsed time: 1.88 seconds
+File saved as facility_location_results_noisy_run14.csv
+Feasible solutions with energy_M = 2 (total shots): 23
+Total feasible measurements (total shots): 1407
+
+================ RUN 15 / 30 ================
+Start time: 2025-11-03 09:27:29
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 6.2707
+Optimal parameters (theta_star): [5.9239 0.1149 4.8805 0.4111 1.5207 1.9177 1.7264 1.8298 6.2377 0.8175 3.2811 1.88   1.0114 0.9066 5.1039 0.5568 3.4173 0.7953 0.6445 0.0028 1.2778 0.593  1.8335 0.4372 3.1145 1.2005 3.5833 0.0289 2.1967 0.79   2.0806 0.0566 5.3959 0.8815 2.0787 0.992  6.1388 1.1497 5.0866 0.7277 2.2266 0.8865 4.8099 0.8393 4.8721 0.5406 1.8972 0.875  4.1313 1.061  6.0992 1.0879 3.3504 0.0243 5.937  0.5621 0.5702 0.376  3.5906 0.7981]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:31
+Elapsed time: 1.91 seconds
+File saved as facility_location_results_noisy_run15.csv
+Feasible solutions with energy_M = 2 (total shots): 19
+Total feasible measurements (total shots): 1907
+
+================ RUN 16 / 30 ================
+Start time: 2025-11-03 09:27:31
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.5080
+Optimal parameters (theta_star): [5.2765 1.6044 4.4834 0.8901 0.0537 1.1747 4.9217 0.177  0.1598 1.3566 0.7132 0.7253 2.8161 0.9121 2.1936 1.469  5.7934 1.412  2.5298 0.3265 6.2136 0.2725 4.7717 0.9519 3.5362 0.5923 2.331  0.1596 1.6724 1.5638 4.2355 0.1676 5.3022 0.2474 5.0705 0.6195 4.0928 0.7315 3.7816 1.412  4.0151 1.3587 1.6809 1.2481 2.2568 0.038  3.3174 0.6442 4.2338 1.1586 1.1313 0.6296 4.0852 0.8327 6.139  1.1879 1.0674 1.2465 1.4849 2.0362]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:33
+Elapsed time: 1.92 seconds
+File saved as facility_location_results_noisy_run16.csv
+Feasible solutions with energy_M = 2 (total shots): 23
+Total feasible measurements (total shots): 2025
+
+================ RUN 17 / 30 ================
+Start time: 2025-11-03 09:27:33
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.7469
+Optimal parameters (theta_star): [3.5657 0.3602 1.581  0.6025 2.4533 1.2461 1.3362 1.1828 1.8328 0.8782 2.5051 0.2594 2.8403 0.3191 5.1859 1.0437 1.9092 0.7295 2.3803 1.233  0.5551 0.4643 4.9479 0.9543 0.2449 0.3218 1.0486 0.2692 2.4251 0.2742 6.0979 0.6176 5.7932 0.4658 1.0261 1.1521 1.1889 0.1279 6.268  1.2755 5.5139 0.1509 2.2565 1.2334 5.8318 0.7244 3.6288 0.6135 4.8816 0.8278 3.7867 0.041  2.198  0.4295 0.1613 1.3626 2.3492 0.151  0.8    0.9285]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:35
+Elapsed time: 1.83 seconds
+File saved as facility_location_results_noisy_run17.csv
+Feasible solutions with energy_M = 2 (total shots): 30
+Total feasible measurements (total shots): 1907
+
+================ RUN 18 / 30 ================
+Start time: 2025-11-03 09:27:35
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.5005
+Optimal parameters (theta_star): [2.9658 1.0554 4.437  1.5519 3.1328 0.8118 4.3175 0.1397 5.575  1.7252 3.2972 0.4098 0.12   1.1932 4.2249 0.9798 6.089  0.1133 5.6333 1.1087 5.6079 0.4179 2.8901 1.379  5.1485 1.2517 4.0444 0.8179 0.2382 0.0717 2.5739 1.5481 2.9262 0.3862 1.587  1.2875 0.8065 0.0399 0.6641 1.4402 0.6812 0.9955 5.1884 1.4955 4.2103 0.4345 2.6358 0.191  4.2853 0.0244 4.9344 0.1304 5.6729 0.1729 1.6946 0.3885 3.9877 1.4262 5.8199 1.7993]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:37
+Elapsed time: 1.91 seconds
+File saved as facility_location_results_noisy_run18.csv
+Feasible solutions with energy_M = 2 (total shots): 16
+Total feasible measurements (total shots): 1980
+
+================ RUN 19 / 30 ================
+Start time: 2025-11-03 09:27:37
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 3.2443
+Optimal parameters (theta_star): [1.1922 0.7739 6.048  0.0187 3.6041 0.2367 6.6413 2.0397 1.1815 1.1905 0.5324 0.2386 0.3681 1.3254 2.5002 1.6478 0.5803 0.2546 1.2352 1.3099 1.7792 0.0447 2.9681 1.0199 0.0665 0.9892 0.6868 1.0739 5.9809 1.3264 4.4656 0.8702 0.0832 0.7437 2.5814 0.4105 1.9744 0.46   2.9541 0.5302 4.2283 0.7474 5.717  0.9082 2.386  1.4014 1.8322 1.4854 4.7208 0.4239 2.2136 1.4084 5.5589 1.2148 1.0606 0.9178 0.9507 1.0381 2.5432 0.6232]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:39
+Elapsed time: 1.92 seconds
+File saved as facility_location_results_noisy_run19.csv
+Feasible solutions with energy_M = 2 (total shots): 16
+Total feasible measurements (total shots): 1536
+
+================ RUN 20 / 30 ================
+Start time: 2025-11-03 09:27:39
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 3.2108
+Optimal parameters (theta_star): [5.5157 1.4802 6.242  0.2725 0.6884 0.8845 4.7024 1.9142 2.4336 0.766  2.0482 1.165  3.4401 0.2445 4.6924 0.5257 5.4969 0.4942 1.8446 2.0459 1.5593 1.1308 3.8983 1.8904 4.5233 0.7439 1.2947 0.6143 3.4802 1.4535 2.2639 0.1913 1.6103 0.8048 0.4976 1.1206 3.0949 1.3663 0.2403 1.0629 0.895  0.9302 4.4107 1.5238 6.067  1.0448 5.6313 0.2021 3.3757 0.5591 1.8993 0.657  0.5039 1.9439 3.8387 1.2004 1.5241 1.4722 4.977  0.5421]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:40
+Elapsed time: 1.84 seconds
+File saved as facility_location_results_noisy_run20.csv
+Feasible solutions with energy_M = 2 (total shots): 27
+Total feasible measurements (total shots): 1627
+
+================ RUN 21 / 30 ================
+Start time: 2025-11-03 09:27:40
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.4869
+Optimal parameters (theta_star): [ 3.5373  0.7109  6.8186  0.6143  3.2479  1.1511  3.8825  0.9663  3.3516  1.2705  1.4054  1.3906  2.3194  0.2034  2.8458  1.0668  4.9193  1.7983  3.3622  1.2182  3.7347  1.2762  3.4202  0.0996  6.0508  0.5142  3.1383  1.054   1.8567  0.7045  2.8603 -0.0515  2.8903  1.3554  4.7173  0.1876  4.1658  0.3302  4.5316  0.5153  2.4631  0.1958  1.268   0.6309  4.6964 -0.0188  4.062   0.5176  3.9446  1.3576  6.1031  1.0516  1.0544  0.9053  0.7038  1.0717  1.0231  0.9749  2.0234  1.4851]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:42
+Elapsed time: 1.95 seconds
+File saved as facility_location_results_noisy_run21.csv
+Feasible solutions with energy_M = 2 (total shots): 4
+Total feasible measurements (total shots): 1582
+
+================ RUN 22 / 30 ================
+Start time: 2025-11-03 09:27:42
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.5979
+Optimal parameters (theta_star): [0.6769 0.0563 5.7016 0.9491 1.157  0.8465 6.4128 0.9024 0.7675 1.3578 3.4039 0.2162 3.9129 0.061  3.3328 0.2214 2.1155 1.0172 5.7866 0.5789 0.5118 1.3522 0.9036 0.2221 1.9535 0.2455 1.9669 1.4151 5.8383 1.9087 5.6987 1.2445 5.9963 1.4567 4.9201 0.482  0.8939 0.2536 3.7198 1.2138 3.9596 0.061  4.0084 0.0412 1.3995 0.5625 4.7222 0.7935 6.2288 0.4617 3.8262 1.4049 1.5768 1.2141 3.2894 0.044  4.1517 0.3549 1.6887 0.7006]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:44
+Elapsed time: 1.95 seconds
+File saved as facility_location_results_noisy_run22.csv
+Feasible solutions with energy_M = 2 (total shots): 15
+Total feasible measurements (total shots): 1754
+
+================ RUN 23 / 30 ================
+Start time: 2025-11-03 09:27:44
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.1209
+Optimal parameters (theta_star): [3.2664 1.5273 3.5489 0.9648 0.249  0.8555 5.1336 1.0442 6.0223 1.7735 1.8466 1.3844 3.1005 1.077  4.8556 0.917  2.4669 0.2397 2.8846 1.9323 4.3988 1.504  2.3291 1.1004 5.9021 1.5625 2.8165 0.5818 1.2146 1.2221 3.7981 1.1138 1.8536 0.4846 0.7953 1.1719 4.7434 1.4205 0.0713 1.1762 2.519  0.0136 6.0414 0.3405 2.2872 1.4991 4.3522 0.0942 1.6303 0.7268 0.3313 0.5634 5.7386 1.3625 1.556  0.547  0.0892 0.2532 0.5224 1.1291]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:46
+Elapsed time: 1.88 seconds
+File saved as facility_location_results_noisy_run23.csv
+Feasible solutions with energy_M = 2 (total shots): 33
+Total feasible measurements (total shots): 1925
+
+================ RUN 24 / 30 ================
+Start time: 2025-11-03 09:27:46
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.2892
+Optimal parameters (theta_star): [4.4419 0.0657 5.6717 1.4838 0.7885 1.0049 2.9507 1.1682 6.2616 1.8059 4.0488 0.514  2.6385 0.4233 5.0721 0.7229 1.3472 1.4968 3.5997 0.1481 5.0766 0.4494 3.563  1.0426 1.1305 0.5187 3.8508 0.8614 5.9081 1.2384 0.4747 0.6328 2.969  0.3845 3.3372 0.5423 2.8304 0.091  3.9097 0.8523 3.7363 1.1419 3.5128 0.6503 0.8203 0.1445 5.8706 0.9614 0.8108 0.9627 1.854  1.098  2.4238 0.8435 4.2092 0.8467 5.7758 1.3154 3.5623 1.4303]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:48
+Elapsed time: 1.93 seconds
+File saved as facility_location_results_noisy_run24.csv
+Feasible solutions with energy_M = 2 (total shots): 28
+Total feasible measurements (total shots): 2162
+
+================ RUN 25 / 30 ================
+Start time: 2025-11-03 09:27:48
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.8362
+Optimal parameters (theta_star): [3.633  0.3633 2.457  1.2261 1.668  0.2137 3.2452 1.239  5.6014 0.307  5.8537 1.0163 2.4532 1.0637 4.5519 1.0118 5.1437 1.003  4.6851 0.7424 4.522  1.2497 4.3225 0.1041 5.8365 1.0405 5.9498 0.0988 0.9066 0.4074 5.8034 0.6767 0.3824 1.4144 4.2221 1.0429 5.3052 0.0273 3.2548 0.5722 0.1783 0.6412 3.9367 0.1514 1.459  0.1211 3.6156 0.3266 1.4829 0.4816 1.4475 1.1844 5.9566 1.3059 0.9802 1.2529 4.0467 0.     6.0811 1.5081]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:50
+Elapsed time: 1.91 seconds
+File saved as facility_location_results_noisy_run25.csv
+Feasible solutions with energy_M = 2 (total shots): 18
+Total feasible measurements (total shots): 1696
+
+================ RUN 26 / 30 ================
+Start time: 2025-11-03 09:27:50
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.8746
+Optimal parameters (theta_star): [2.7547 0.1167 3.0766 0.7737 0.283  0.713  5.7438 0.505  5.9561 1.07   3.941  1.8063 4.4496 0.3219 1.9097 1.0776 2.1938 0.2991 5.1414 0.2685 1.4949 0.1264 5.8745 0.9813 0.0255 0.918  3.0565 1.9108 3.4332 0.8945 3.8657 0.0276 1.8058 0.1763 1.6726 1.0173 0.3022 1.0351 5.4971 0.4747 4.3925 0.5415 2.3838 0.422  2.5433 0.6829 0.2724 0.0373 3.9203 1.2312 6.1167 1.517  4.1773 0.4283 6.0592 0.8126 2.1198 0.7644 0.8965 0.6294]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:52
+Elapsed time: 1.92 seconds
+File saved as facility_location_results_noisy_run26.csv
+Feasible solutions with energy_M = 2 (total shots): 12
+Total feasible measurements (total shots): 1641
+
+================ RUN 27 / 30 ================
+Start time: 2025-11-03 09:27:52
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 6.5875
+Optimal parameters (theta_star): [0.0199 1.2516 2.4896 1.5492 3.6904 0.5541 5.1393 1.5097 0.4457 1.005  5.2669 1.27   4.1933 1.1882 4.7183 1.4668 3.1602 1.212  4.8241 0.3761 0.8882 0.4372 5.1289 1.1595 0.4111 0.4597 0.4098 1.2417 2.4719 1.4574 5.1278 0.6139 2.4051 1.0873 3.5477 1.2178 2.8661 1.3987 2.3889 0.4995 5.9893 0.5342 4.3616 0.603  5.6048 1.0392 4.7584 0.8034 2.1857 1.0713 5.8798 0.7501 2.2269 0.4553 4.7274 0.8429 1.5951 1.4458 3.1377 1.1246]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:54
+Elapsed time: 1.87 seconds
+File saved as facility_location_results_noisy_run27.csv
+Feasible solutions with energy_M = 2 (total shots): 12
+Total feasible measurements (total shots): 1766
+
+================ RUN 28 / 30 ================
+Start time: 2025-11-03 09:27:54
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.4697
+Optimal parameters (theta_star): [0.4781 1.2494 2.3836 0.1387 1.0076 0.8805 3.1701 0.6538 0.8152 0.6362 3.5989 0.2937 6.0752 1.5044 1.1169 0.5432 5.8627 0.605  2.8147 0.888  5.011  1.3235 5.5625 0.6888 2.905  0.0129 4.9644 1.4038 1.4497 0.1854 0.8703 0.085  5.7744 0.6836 0.3885 1.371  1.0904 0.8273 0.8141 0.1303 4.3562 1.1332 2.8829 0.4476 2.6076 1.3125 5.6493 0.7845 4.0706 1.4543 6.0894 0.5778 1.8534 1.3073 2.7765 1.1959 1.4454 1.5633 5.3063 1.4546]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:56
+Elapsed time: 1.95 seconds
+File saved as facility_location_results_noisy_run28.csv
+Feasible solutions with energy_M = 2 (total shots): 15
+Total feasible measurements (total shots): 1567
+
+================ RUN 29 / 30 ================
+Start time: 2025-11-03 09:27:56
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 4.3637
+Optimal parameters (theta_star): [3.9655 1.4249 0.5615 1.7614 5.3426 1.6372 5.8229 1.2195 0.7514 0.6233 6.1626 0.901  1.3646 0.2655 1.4805 0.0193 0.4776 0.2386 5.2549 1.0471 1.2111 0.9281 0.8455 0.1694 3.2856 1.3255 3.4019 0.2304 1.3848 0.2953 1.5713 0.0089 5.1239 1.4728 3.7326 1.3603 2.8396 2.0522 1.2044 0.4651 5.9402 1.4449 4.6819 0.5396 0.1718 0.3362 0.0498 0.0212 2.2337 1.435  4.0756 1.2251 0.8424 1.3667 0.1052 0.1439 5.1847 0.0358 5.0191 0.3873]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:27:58
+Elapsed time: 1.92 seconds
+File saved as facility_location_results_noisy_run29.csv
+Feasible solutions with energy_M = 2 (total shots): 38
+Total feasible measurements (total shots): 1873
+
+================ RUN 30 / 30 ================
+Start time: 2025-11-03 09:27:58
+/opt/homebrew/Caskroom/mambaforge/base/envs/quantum/lib/python3.11/site-packages/scipy/_lib/pyprima/common/preproc.py:68: UserWarning: COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 62
+  warn(f'{solver}: Invalid MAXFUN; it should be at least {min_maxfun_str}; it is set to {maxfun}')
+Best expected energy (ideal): 5.0040
+Optimal parameters (theta_star): [5.3403 1.3228 5.2571 0.6015 3.0664 0.2142 3.3229 1.2404 2.6532 0.4877 2.3342 1.0736 4.4324 0.1568 5.7632 1.3997 5.5595 1.0089 2.8412 1.0207 1.6815 0.1651 3.4664 0.5125 1.6391 0.7001 5.5153 1.2587 4.8645 1.3296 5.238  1.0009 0.3412 0.8931 1.9741 1.0735 1.2087 0.7213 2.9325 0.2741 2.0752 0.0277 3.3409 0.7504 1.8075 0.6791 2.6907 0.8719 4.1147 0.1082 3.6693 1.4325 5.7309 0.1055 3.9316 0.0257 3.1153 0.0551 4.6043 0.7032]
+Transpiled circuit depth: 1990
+End time: 2025-11-03 09:28:00
+Elapsed time: 1.84 seconds
+File saved as facility_location_results_noisy_run30.csv
+Feasible solutions with energy_M = 2 (total shots): 29
+Total feasible measurements (total shots): 1935
